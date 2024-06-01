@@ -1,0 +1,226 @@
+#image{
+    border-radius: 12px;
+}
+.text_links{
+    display: inline-block;
+    margin-left: 2px;
+    text-align: left;
+    
+}
+.my_nav{
+    background-color:#cccc;
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 0;
+    position:relative;
+    margin: 0 auto;
+    width: 90%;
+    
+
+}
+#school_name{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #7c7979cc;
+    font-size: 30px;
+    border-radius: 12px;
+    margin-bottom: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-shadow: 0px 0px 3px white;
+
+    
+}
+
+
+footer{
+    display: flex;
+  /*   margin-top: 250px; */
+    margin: 0 auto;
+    width: 96%;
+}
+
+/* google_maps */
+.google_location{
+    border-radius: 12px;
+    width: 90%;
+    
+}
+.google_location_div{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.images{
+    text-align: center;
+    margin: auto;
+    
+}
+
+/* About page styling */
+#title_for_history ,#title_for_infastructure,#title_for_academics,#location_title{
+    font-family: Helvetica;
+    text-align: center;
+    color:rgba(17, 14, 14, 0.712);
+    box-shadow: 5px 5px 20px black;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    text-shadow: 0px 0px 2px gray;
+}
+
+#founded{
+    margin:0 auto;
+    margin-bottom: 5px;
+}
+.about_container{
+    display:block;
+    margin:auto ;
+    justify-content: center;
+
+    width: 90%;
+
+}
+
+.slider {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 250px;
+  
+  
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  
+}
+
+/* Adding media queries */
+
+
+/* CSS animations */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(5px);
+
+
+
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}
+
+
+
+
+body{
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    background:linear-gradient(65deg, rgb(13, 255, 106), green, lime, rgb(66, 202, 3),rgb(1, 105, 1)) ;
+   /*  background: linear-gradient(45deg, blue,rgb(119, 119, 255),rgb(4, 4, 102),rgb(61, 61, 209),rgb(4, 4, 133),rgba(95, 95, 236, 0.856)); */
+    
+
+}
+
+footer{
+    background-color: #413f3fcc;
+    display: block;
+    width: 90%;
+    text-align: center;
+
+}
+
+.footer_text{
+    text-shadow: 0px 0px 2px white;
+    margin-bottom: 5px;
+}
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:rebeccapurple;
+    height: 1.25px;
+    margin: 5px;
+  }
+
+.my_button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color:rgb(219, 44, 44);
+    border: 1px solid black;
+    padding:3px;
+    box-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 3px white;
+
+}
+
+.badge{
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-image: url("holos/Screenshot_20240521-135951.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: anime 3s infinite linear;
+    box-shadow: 0px 0px 10px yellow;
+    
+}
+.school{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+h4{
+    color: rgb(146, 8, 8);
+}
+
+.motto,.vision,.mission,.corevalue{
+    display: inline-block;
+    margin: auto;
+    width: 150px;
+    /* text-align: center; */
+    height: 250px;
+    border: solid 1px black;
+    padding: 5px;
+
+}
+.contents{
+    /* display:grid; */
+    width: 90%;
+    margin: auto;
+    /* display: flex; */
+    
+}
+
+@keyframes anime{
+    0%{transform: rotatex(0deg);}
+    100%{transform: rotatey(360deg);}
+}
