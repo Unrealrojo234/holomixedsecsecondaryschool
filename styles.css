@@ -224,3 +224,160 @@ h4{
     0%{transform: rotatex(0deg);}
     100%{transform: rotatey(360deg);}
 }
+.preloader {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+  }
+  
+  .square {
+    width: 8px;
+    height: 30px;
+    background: rgb(71, 195, 248);
+    border-radius: 10px;
+    display: block;
+    /*margin:10px;*/
+    -webkit-animation: turn 2.5s ease infinite;
+    animation: turn 2.5s ease infinite;
+    box-shadow: rgb(71, 195, 248) 0px 1px 15px 0px;
+  }
+  
+  .top {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .bottom {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  
+  .left {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+  }
+  
+  .right {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  
+  @-webkit-keyframes turn {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+  
+    50% {
+      transform: translateX(400%) translateY(100%) rotate(90deg);
+    }
+  
+    100% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+  }
+  
+  @keyframes turn {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+  
+    70% {
+      transform: translateX(400%) translateY(100%) rotate(90deg);
+    }
+  
+    100% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+  }
+
+  .card {
+    position: relative;
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px green;
+    ;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgb(184, 170, 170);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+  
+  .myCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bg h2{
+    color: rgb(173, 18, 18);
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 5px whitesmoke;
+  }
+
+  .bg p{
+    text-align: center;
+    text-shadow: 0px 0px 5px whitesmoke;
+  }

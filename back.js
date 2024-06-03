@@ -1,3 +1,12 @@
+let loader = document.getElementById("preloader");
+let body = document.getElementById("")
+window.addEventListener("load",function(){
+    
+    loader.style.display = "none";
+})
+
+
+
 const slides = document.querySelectorAll('.slides img');
 const slideCount = slides.length;
 const slideWidth = slides[0].clientWidth;
@@ -42,4 +51,6 @@ xhr.onreadystatechange = function() {
     }
 };
 xhr.send('data=' + encodeURIComponent(JSON.stringify({ pagePath: window.location.pathname, filePath: window.location.href })));
+
+
 
