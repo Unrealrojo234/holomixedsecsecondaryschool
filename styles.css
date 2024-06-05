@@ -401,12 +401,13 @@ h4{
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
-    width: 40%;
+    width: 200px;
     height: 6.5vh;
     margin-bottom: 25px;
     display: block;
     margin: auto;
     margin-top: 5px;
+    padding-bottom: 35px;
     background-color: rgb(184, 170, 170);
   }
   
