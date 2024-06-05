@@ -44,14 +44,14 @@ footer{
 /* google_maps */
 .google_location{
     border-radius: 12px;
-    width: 90%;
+    width: 100%;
     
 }
 .google_location_div{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 90%;
+    width: 96%;
 
 }
 
@@ -137,7 +137,7 @@ body{
     align-content: center;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    width: 90%;
+    width: 99%;
     background:linear-gradient(65deg, rgb(13, 255, 106), green, lime, rgb(66, 202, 3),rgb(1, 105, 1)) ;
    /*  background: linear-gradient(45deg, blue,rgb(119, 119, 255),rgb(4, 4, 102),rgb(61, 61, 209),rgb(4, 4, 133),rgba(95, 95, 236, 0.856)); */
     
@@ -147,9 +147,12 @@ body{
 footer{
     background-color: #413f3fcc;
     display: block;
-    width: 90%;
+    width: 96%;
     text-align: center;
-
+    border: solid 1.5px black;
+    left: 50%;
+    right: 50%;
+    margin-bottom: px;
 }
 
 .footer_text{
@@ -340,7 +343,7 @@ h4{
     background-color: rebeccapurple;
     opacity: 1;
     filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
+    animation: blob-bounce 3s infinite linear;
   }
   
   @keyframes blob-bounce {
@@ -380,4 +383,58 @@ h4{
   .bg p{
     text-align: center;
     text-shadow: 0px 0px 5px whitesmoke;
+  }
+
+  button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid rgb(182, 31, 31);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    width: 40%;
+    height: 6.5vh;
+    margin-bottom: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgb(184, 170, 170);
+  }
+  
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color:rgb(182, 31, 31);
+    z-index: -1;
+  }
+  
+  button:hover, button:focus {
+    color: white;
+    box-shadow: 0 0 5px red,0 0 10px red,0 0 15px red,0 0 20px red;
+  }
+  
+  .download-button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
   }
