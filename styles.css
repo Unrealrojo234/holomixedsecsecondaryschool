@@ -137,7 +137,7 @@ body{
     align-content: center;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    width: 99%;
+    width: 90%;
     background:linear-gradient(65deg, rgb(13, 255, 106), green, lime, rgb(66, 202, 3),rgb(1, 105, 1)) ;
    /*  background: linear-gradient(45deg, blue,rgb(119, 119, 255),rgb(4, 4, 102),rgb(61, 61, 209),rgb(4, 4, 133),rgba(95, 95, 236, 0.856)); */
     
