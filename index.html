@@ -62,11 +62,24 @@
     <header class="hid">
         <h1 id="school_name"> <marquee >Holo Mixed Secondary School</marquee> </h1>
         <nav class="my_nav">
-            <ul>
+          <input type="checkbox" id="checkbox" placeholder="a">
+          <div class="nav-contents">
+            <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+          </label>
+          <div class="links">
+             <ul>
+                <li class="text_links"><a href="#school_name">HOME</a></li>
                 <li class="text_links"><a href="#about">ABOUT</a></li>
-                <li class="text_links" ><a href="#Holos_performance">ACADEMICS</a></li>
                 <li class="text_links" ><a href="#infrastrucure">OUTLOOK</a></li>
+                <li class="text_links" ><a href="#Holos_performance">ACADEMICS</a></li>
+                <li class="text_links" ><a href="#contact-us">CONTACT US</a></li>
+                <li class="text_links" ><a href="#">STAFF&MORE</a></li>
             </ul>
+          </div>
+          </div>
         </nav>
     </header> 
     <hr>
@@ -266,9 +279,10 @@
         </button></a>
         <br>
     </academics>
-    <footer>
-        <p class="footer_text"> Contact us: <a href="tel:0724454535">Phone</a> <a href="mailto:peteromolloogutu@gmail.com">Email</a></p>
+    <footer id="contact-us">
+        <p class="footer_text"> Contact us:  <label for="phone">Phone</label><a href="tel:0724454535"><img src="icons/icons8-phone-94.png" alt="Phone"></a> <a href="mailto:peteromolloogutu@gmail.com"><img src="icons/icons8-email-94.png" alt="Email"></a><label for="email">Email</label></p>
         <p class="footer_text">&#169;2024 Holo Mixed Secondary School</p>
+        <p class="footer_text">All Rights Are Reserved</p>
     </footer>
     <script defer src="back.js"></script>
 </body>
