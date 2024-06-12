@@ -85,6 +85,7 @@
     position:fixed;
     right: 2%;
     top: 0%;
+    z-index: 1;
 }
 body a{
   text-decoration: none;
@@ -94,7 +95,7 @@ body a{
 
 .my_nav ul li a{
   text-decoration: none;
-  color: rgb(34, 30, 25);
+  color: rgb(32, 31, 31);
   
  
 }
@@ -103,8 +104,8 @@ body a{
 }
 .my_nav .toggle{
   position:fixed;
-  right: 0%;
-  top: 0%;
+  right: 2%;
+  top: 0.1%;
   
 }
 .my_nav ul li{
@@ -406,7 +407,7 @@ h4{
     width: 200px;
     height: 250px;
     border-radius: 14px;
-    z-index: 1111;
+    z-index: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -537,12 +538,19 @@ h4{
     transform: scale(0.9);
   }
 
-  footer{
-    color: rgb(211, 207, 202);
-    background:#1d1a1a;
-    width: 106%;
-    position:-ms-page;
-    bottom:0%;
-    margin-bottom: 0%;
-  }
   
+  @media screen {
+    footer{
+      color: rgb(211, 207, 202);
+      background:#1d1a1a;
+      width: 106%;
+      position:-ms-page;
+      bottom:0%;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width:480px) {
+    footer a img{
+      width: 80px;
+    }
+  }
