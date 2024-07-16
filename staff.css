@@ -1,0 +1,139 @@
+
+@media screen and (max-width:768px) {
+    body{
+        background-size: 100vh;
+        overflow-x: hidden;
+    }    
+}
+header h1{
+    font-family: 'sofia';
+}
+
+
+main  h3{
+    text-decoration:underline;
+    
+}
+
+img{
+    height:auto;
+    max-width: 100%;
+    border-radius:12px;
+}
+
+.staff-slide div{
+    padding: 2;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border-radius: 10px;
+    min-width:200px;
+    scroll-snap-align: start;
+    display: inline-block;
+    color:whitesmoke;
+    
+}
+
+.staff-slide{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+@media screen and (min-width:481px) {
+    .staff-slide div{
+        min-width: 200px;
+        scroll-snap-align: start;
+    }
+}
+p{
+    /* color: white; */
+    letter-spacing: 2px;
+    
+}
+
+
+.loading {
+    --speed-of-animation: 0.9s;
+    --gap: 6px;
+    --first-color: #4c86f9;
+    --second-color: #49a84c;
+    --third-color: #f6bb02;
+    --fourth-color: #f6bb02;
+    --fifth-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;z-index: 100;
+    left: 35%;
+    width: 100px;
+    gap: 6px;
+    height: 100px;
+}
+@media screen and (min-width:769px){
+    .loading{
+        top: 40%;
+        left: 50%;
+    }
+}
+
+.loading span {
+    width: 4px;
+    height: 50px;
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+   
+   .loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.8s;
+   }
+   
+   .loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.7s;
+   }
+   
+   .loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.6s;
+   }
+   
+   .loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.5s;
+   }
+   
+   @keyframes scale {
+    0%, 40%, 100% {
+     transform: scaleY(0.05);
+    }
+   
+    20% {
+     transform: scaleY(1);
+    }
+   }
+
+@media screen and (max-width:769px) {
+    img{
+        width: 100%;
+        
+    }
+}
+picture{
+    width: 200px;
+}
+
+body{
+    background-image: url('backgroundImages/43547c78-12dc-40b2-a024-7af693d37d86.jpg');
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+    background-color: #49a84c;
+}
