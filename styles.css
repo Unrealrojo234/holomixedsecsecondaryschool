@@ -554,3 +554,15 @@ h4{
       width: 80px;
     }
   }
+
+  .event-pics{
+    width: 28rem;
+    height: 12rem;
+  }
+
+  @media screen and (min-width:770px) {
+    body{
+      width: 50%;
+      margin: auto;
+    }
+  }
